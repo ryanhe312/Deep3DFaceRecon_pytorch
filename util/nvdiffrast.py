@@ -58,7 +58,7 @@ class MeshRenderer(nn.Module):
         vertex_ndc = vertex @ ndc_proj.t()
         if self.ctx is None:
             if self.use_opengl:
-                self.ctx = dr.RasterizeGLContext(device=device)
+                self.ctx = dr.RasterizeCudaContext(device=device)
                 ctx_str = "opengl"
             else:
                 self.ctx = dr.RasterizeCudaContext(device=device)

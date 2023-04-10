@@ -1,0 +1,7 @@
+matplotlib>=2.2.5
+opencv-python>=3.4.9.33
+tensorboard>=1.15.0
+# tensorflow==1.15.0
+kornia>=0.5.5
+dominate>=2.6.0
+trimesh>=3.9.20
